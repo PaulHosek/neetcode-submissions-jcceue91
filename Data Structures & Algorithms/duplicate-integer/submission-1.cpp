@@ -1,0 +1,7 @@
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        std::unordered_set<int> s(nums.begin(), nums.end());
+        return nums.size() != s.size();
+    }
+};
